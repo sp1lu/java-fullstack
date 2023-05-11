@@ -43,3 +43,5 @@ Esempio di link relativo: [link](/ex/ex_01/HelloWorld.java)
 | Dato | Dato |
 
 ---
+
+Viva le emoji:💀 :smiley:
