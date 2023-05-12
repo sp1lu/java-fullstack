@@ -34,7 +34,7 @@ public class calcArea {
                     Double area = width * length;
 
                     System.out.println("--------------");
-                    System.out.println("Area = " + area);
+                    System.out.println("Area = %f".formatted(area));
                     System.out.println("--------------");
                 }
 
