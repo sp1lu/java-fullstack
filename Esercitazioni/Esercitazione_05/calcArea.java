@@ -3,9 +3,9 @@ import java.util.Scanner;
 
 public class calcArea {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
         while (true) {
-            Scanner input = new Scanner(System.in);
 
             Double width;
             Double length;
@@ -38,6 +38,8 @@ public class calcArea {
                     System.out.println("--------------");
                 }
 
+                break;
+
             } catch (InputMismatchException e) {
 
                 System.out.println("------------------");
@@ -51,4 +53,5 @@ public class calcArea {
         }
 
     }
+
 }
