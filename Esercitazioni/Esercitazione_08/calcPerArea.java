@@ -6,14 +6,18 @@ public class calcPerArea {
 
         Scanner input = new Scanner(System.in);
 
+        System.out.println("Come ti chiami?");
+        String name = input.next();
+
         while (true) {
             try {
-                System.out.println("Inserire il valore del lato:");
+                System.out.println("%s, inserisci il valore del lato:".formatted(name));
                 int lato = input.nextInt();
 
                 if (lato > 40 || lato <= 0) {
                     System.out.println("------------------------");
-                    System.out.println("Valore non valido. Inserire un numero compreso tra 1 e 40.");
+                    System.out.println("%s, hai inserito un valore non valido. Inserire un numero compreso tra 1 e 40."
+                            .formatted(name));
                     System.out.println("------------------------");
 
                     continue;
@@ -23,6 +27,7 @@ public class calcPerArea {
                     int perimeter = perimeterCalc(lato);
 
                     System.out.println("------------------------");
+                    System.out.println("Grazie, %s. Ecco i risultati:".formatted(name));
                     System.out.println("Perimetro = %d".formatted(perimeter));
                     System.out.println("Area = %d".formatted(area));
                     System.out.println("------------------------");
