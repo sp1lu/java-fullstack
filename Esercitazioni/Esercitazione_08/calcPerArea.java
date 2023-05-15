@@ -7,7 +7,7 @@ public class calcPerArea {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Come ti chiami?");
-        String name = input.next();
+        String name = input.nextLine();
 
         while (true) {
             try {
@@ -16,8 +16,7 @@ public class calcPerArea {
 
                 if (lato > 40 || lato <= 0) {
                     System.out.println("------------------------");
-                    System.out.println("%s, hai inserito un valore non valido. Inserire un numero compreso tra 1 e 40."
-                            .formatted(name));
+                    System.out.println("%s, inserisci un numero compreso tra 1 e 40.".formatted(name));
                     System.out.println("------------------------");
 
                     continue;
