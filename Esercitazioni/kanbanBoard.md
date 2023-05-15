@@ -60,6 +60,11 @@ nextString();
 nextDouble();
 ```
 
+- Non più necessario, ma utile è la chiusura dello Scanner quando non più utilizzata da alcun processo
+```
+nomeScanner.close();
+```
+
 - Per l'amor di Arceus, chiudere sempre i cicli While, quantomeno con un:
 ```
 break;
@@ -70,6 +75,18 @@ Utile mettere la condizione di chiusura di un ciclo While con un If che contiene
 while (true) {
     if(condition = something)
     break;
+}
+```
+
+- Posso utilizzare l'eccezione InputMismatchException già integrata in Java per gestire input dell'utenti diversi da quelli attesi; per esempio in caso di inserimento di stringhe quando si richiede un numero.
+
+- In generale le eccezioni di questo tipo si gestiscono tramite un try & catch:
+```
+try {
+    // cosa eseguire in caso di successo
+
+} catch (InputMismatchException e) {
+    // cosa eseguire in caso di errore
 }
 ```
 
