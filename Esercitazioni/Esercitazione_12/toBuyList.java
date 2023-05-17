@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
@@ -83,13 +84,12 @@ public class toBuyList {
             System.out.println("Non hai niente da comprare oggi");
 
         } else {
+            toBuyList.removeAll(Arrays.asList(null, ""));
             System.out.println("-------------------------");
-            System.out.println("Lista della spesa:");
+            System.out.println("Oggi devi comprare %d cose. Eccole:".formatted(toBuyList.size()));
 
-            toBuyList.removeIf(String::isEmpty);
-
-            for (String listElement : toBuyList) {
-                System.out.println(listElement);
+            for (int i = 0; i < toBuyList.size(); i++) {
+                System.out.println("#" + (i + 1) + " " + toBuyList.get(i));
             }
 
             System.out.println("-------------------------");
