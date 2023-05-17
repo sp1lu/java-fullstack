@@ -27,18 +27,26 @@ public class toBuyList {
                 System.out.println("Lista della spesa svuotata");
 
             } else if (userInput.equals("f") || userInput.equals("F")) {
-                System.out.println("-------------------------");
-                System.out.println(toBuyList.get(toBuyList.size() - 1) + " rimosso dalla lista");
-                toBuyList.remove(toBuyList.size() - 1);
 
-                System.out.println("-------------------------");
-                System.out.println("Lista aggiornata:");
+                if (toBuyList.size() == 0) {
+                    System.out.println("La lista della spesa vuota. Nulla da rimuovere");
+                    System.out.println("Ricomincia ad aggiungere elementi");
 
-                for (String listElement : toBuyList) {
-                    System.out.println(listElement);
+                    continue;
+                } else {
+                    System.out.println("-------------------------");
+                    System.out.println(toBuyList.get(toBuyList.size() - 1) + " rimosso dalla lista");
+                    toBuyList.remove(toBuyList.size() - 1);
+
+                    System.out.println("-------------------------");
+                    System.out.println("Lista aggiornata:");
+
+                    for (String listElement : toBuyList) {
+                        System.out.println(listElement);
+                    }
+
+                    System.out.println("-------------------------");
                 }
-
-                System.out.println("-------------------------");
 
             } else if (userInput.equals("d") || userInput.equals("D")) {
 
