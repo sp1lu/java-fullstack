@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class forSomething {
+public class toBuyList {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -29,7 +29,7 @@ public class forSomething {
         } else {
 
             System.out.println("-------------------------");
-            System.out.println("Hai " + toBuyList.size() + " cose da comprare oggi.");
+            System.out.println("Hai %d cose da comprare oggi.".formatted(toBuyList.size()));
             System.out.println("Eccole:");
 
             for (String listElement : toBuyList) {
