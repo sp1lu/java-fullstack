@@ -9,6 +9,7 @@ public class toBuyList {
         System.out.println("-------------------------");
         System.out.println("Fai la lista della spesa");
         System.out.println("Due volte INVIO per uscire");
+        System.out.println("c per svuotare. f per cancellare l'ultimo elemento");
 
         List<String> toBuyList = new ArrayList<String>();
 
@@ -17,17 +18,26 @@ public class toBuyList {
 
             if (userInput.equals("")) {
                 break;
-            }
 
-            toBuyList.add(userInput);
+            } else if (userInput.equals("c")) {
+                toBuyList.clear();
+                System.out.println("Lista della spesa svuotata");
+
+            } else if (userInput.equals("f")) {
+                System.out.println(toBuyList.get(toBuyList.size() - 1) + " rimosso dalla lista");
+                toBuyList.remove(toBuyList.size() - 1);
+
+            } else {
+                toBuyList.add(userInput);
+            }
         }
 
         input.close();
 
         if (toBuyList.size() == 0) {
             System.out.println("Non hai niente da comprare oggi");
-        } else {
 
+        } else {
             System.out.println("-------------------------");
             System.out.println("Hai %d cose da comprare oggi.".formatted(toBuyList.size()));
             System.out.println("Eccole:");
