@@ -49,14 +49,12 @@ public class guessNumAgain {
 
                 break;
             }
+        }
 
-            while (numTry == userNumTry) {
-                System.out.println("-------------------------------------------");
-                System.out.println("Hai finito il numero di tentativi. Peccato!");
-                System.out.println("-------------------------------------------");
-
-                break;
-            }
+        if (numTry == userNumTry) {
+            System.out.println("-------------------------------------------");
+            System.out.println("Hai finito il numero di tentativi. Peccato!");
+            System.out.println("-------------------------------------------");
         }
 
         reader.close();
