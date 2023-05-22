@@ -3,7 +3,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class hangManGame {
+public class hangManGameCopy {
     public static void main(String[] args) {
         Scanner reader = new Scanner(System.in);
 
