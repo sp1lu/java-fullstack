@@ -9,9 +9,11 @@ public class operatoriTernari {
 
         reader.close();
 
-        String ternaryOpResult = (userNum > 10)
-                ? "Il numero è più grande di 10."
-                : "Il numero è più piccolo di 10.";
+        int sepNum = 10;
+
+        String ternaryOpResult = (userNum > sepNum)
+                ? "Il numero è più grande di %d.".formatted(sepNum)
+                : "Il numero è più piccolo di %d.".formatted(sepNum);
 
         System.out.println(ternaryOpResult);
 
