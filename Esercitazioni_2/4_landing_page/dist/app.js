@@ -11,5 +11,6 @@ menuItem.forEach((singleItem) => {
         setTimeout(() => {
             card[array.indexOf(singleItem)].classList.remove('pulse');
         }, 1001);
+        
     });
 });

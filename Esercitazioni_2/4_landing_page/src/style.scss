@@ -63,7 +63,7 @@ nav {
 
                 a {
                     text-decoration: none;
-                    font-size: 14px;
+                    font-size: 0.8rem;
                     transition: 0.1s ease-in-out;
 
                     &:hover {
@@ -73,7 +73,6 @@ nav {
             }
         }
     }
-
 }
 
 .title-section {
@@ -81,7 +80,7 @@ nav {
     margin: 40px 0px;
 
     h1 {
-        font-size: 40px;
+        font-size: 2.3rem;
     }
 }
 
@@ -106,7 +105,7 @@ nav {
         }
 
         h2 {
-            font-size: 24px;
+            font-size: 1.5rem;
         }
 
         img {

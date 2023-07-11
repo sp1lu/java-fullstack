@@ -45,7 +45,7 @@ nav {
         margin-right: 24px; }
         nav .menu .menu-list .menu-item a {
           text-decoration: none;
-          font-size: 14px;
+          font-size: 0.8rem;
           transition: 0.1s ease-in-out; }
           nav .menu .menu-list .menu-item a:hover {
             color: #868686; }
@@ -54,7 +54,7 @@ nav {
   text-align: center;
   margin: 40px 0px; }
   .title-section h1 {
-    font-size: 40px; }
+    font-size: 2.3rem; }
 
 .container {
   text-align: center;
@@ -71,7 +71,7 @@ nav {
     .container .card:hover {
       transform: scale(1.01); }
     .container .card h2 {
-      font-size: 24px; }
+      font-size: 1.5rem; }
     .container .card img {
       padding-left: 48px; }
 
