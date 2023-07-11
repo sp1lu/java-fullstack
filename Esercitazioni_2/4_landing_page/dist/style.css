@@ -1,3 +1,4 @@
+@import url("https://css.gg/css");
 * {
   margin: 0;
   padding: 0;
@@ -46,11 +47,14 @@ nav {
       justify-content: flex-start; }
       nav .menu .menu-list .menu-item {
         list-style-type: none;
-        margin-right: 24px; }
+        margin-right: 24px;
+        display: flex; }
         nav .menu .menu-list .menu-item a {
           text-decoration: none;
           font-size: 0.8rem;
-          transition: 0.1s ease-in-out; }
+          transition: 0.1s ease-in-out;
+          line-height: 1.5;
+          margin-left: 8px; }
           nav .menu .menu-list .menu-item a:hover {
             color: #868686; }
     nav .menu button {
@@ -111,6 +115,8 @@ nav {
       margin: 0 0 16px 0; }
     .form-section form button {
       cursor: pointer;
+      display: flex;
+      justify-content: center;
       color: white;
       background-color: #101d24;
       width: 100%;
@@ -124,6 +130,8 @@ nav {
       .form-section form button:hover {
         background-color: white;
         color: #101d24; }
+      .form-section form button .gg-mail {
+        margin-right: 8px; }
 
 footer {
   width: 100%;

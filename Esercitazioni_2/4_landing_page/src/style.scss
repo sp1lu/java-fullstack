@@ -1,3 +1,5 @@
+@import url("https://css.gg/css");
+
 $dark-color: rgb(16, 29, 36);
 $grey-font: rgb(134, 134, 134);
 
@@ -64,11 +66,14 @@ nav {
             .menu-item {
                 list-style-type: none;
                 margin-right: 24px;
+                display: flex;
 
                 a {
                     text-decoration: none;
                     font-size: 0.8rem;
                     transition: 0.1s ease-in-out;
+                    line-height: 1.5;
+                    margin-left: 8px;
 
                     &:hover {
                         color: $grey-font;
@@ -164,6 +169,8 @@ nav {
 
         button {
             cursor: pointer;
+            display: flex;
+            justify-content: center;
             color: white;
             background-color: $dark-color;
             width: 100%;
@@ -178,6 +185,10 @@ nav {
             &:hover {
                 background-color: white;
                 color: $dark-color;
+            }
+
+            .gg-mail {
+                margin-right: 8px;
             }
         }
     }
