@@ -1,0 +1,160 @@
+$dark-color: rgb(16, 29, 36);
+$grey-font: rgb(134, 134, 134);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+
+    h1,
+    h2 {
+        color: $dark-color;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+        margin: 0 0 12px 0;
+    }
+
+    p,
+    a {
+
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    p {
+        color: $grey-font;
+    }
+
+    a {
+        color: $dark-color;
+    }
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+nav {
+    margin: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 16px 40px;
+
+    .menu {
+        max-width: 80%;
+        margin: auto;
+
+        .menu-list {
+            display: flex;
+            justify-content: flex-start;
+
+            .menu-item {
+                list-style-type: none;
+                margin-right: 24px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    transition: 0.1s ease-in-out;
+
+                    &:hover {
+                        color: $grey-font;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.title-section {
+    text-align: center;
+    margin: 40px 0px;
+
+    h1 {
+        font-size: 2.3rem;
+    }
+}
+
+.container {
+    text-align: center;
+    margin-bottom: 40px;
+
+    .section {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card {
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transition: 100ms ease-in-out;
+        
+        &:hover {
+            transform: scale(1.01);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        img {
+            padding-left: 48px;
+        }
+    }
+}
+
+// Pulse animation
+@keyframes pulse-animation {
+    0% {
+        box-shadow: rgba(149, 157, 165, .5) 0px 8px 24px; 
+      }
+      100% {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+.pulse {
+    animation-name: pulse-animation;
+    animation-duration: 1000ms;
+}
+
+// Media queries
+@media screen and (max-width: 1200px) {
+    nav {
+        .menu {
+            max-width: 92%;
+
+            .menu-list {
+                justify-content: space-between;
+
+                .menu-item {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    main {
+        max-width: 92%;
+        margin: auto;
+    }
+
+    .container {
+        .section {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: 1fr;
+        }
+    }
+}
