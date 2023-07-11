@@ -1,0 +1,65 @@
+$dark-color: rgb(16, 29, 36);
+$grey-font: rgb(134, 134, 134);
+
+body {
+    h1,
+    h2 {
+        color: $dark-color;
+        font-family: 'Inter', sans-serif;
+        font-weight: 900;
+    }
+
+    p {
+        color: $grey-font;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+main {
+    max-width: 80%;
+    margin: auto;
+}
+
+.title-section {
+    text-align: center;
+    margin: 40px 0px;
+
+    h1 {
+        font-size: 40px;
+    }
+}
+
+.container {
+    text-align: center;
+
+    .card {
+        margin-bottom: 40px;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        h2 {
+            font-size: 24px;
+            margin-top: 0px;
+        }
+
+        img {
+            padding-left: 48px;
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 900px) {
+    .container {
+        .section {
+            display: grid;
+            gap: 40px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
