@@ -11,6 +11,11 @@ menuItem.forEach((singleItem) => {
         setTimeout(() => {
             card[array.indexOf(singleItem)].classList.remove('pulse');
         }, 1001);
-        
+
     });
 });
+
+// Copyright year
+const copyrightYear = document.querySelector('#current-year');
+let currentYear = new Date().getFullYear();
+copyrightYear.textContent = currentYear;

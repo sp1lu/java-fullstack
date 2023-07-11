@@ -14,7 +14,8 @@ body h2 {
   margin: 0 0 12px 0; }
 
 body p,
-body a {
+body a,
+body label {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
@@ -75,6 +76,52 @@ nav {
     .container .card img {
       padding-left: 48px; }
 
+.form-section {
+  margin: 80px 0px; }
+  .form-section .form-title {
+    text-align: center; }
+  .form-section form {
+    max-width: 400px;
+    margin: auto; }
+    .form-section form label {
+      text-align: left;
+      font-size: 0.8rem; }
+      .form-section form label::after {
+        content: '*';
+        color: red; }
+    .form-section form input[type=text] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid silver;
+      border-radius: 4px;
+      margin: 0 0 16px 0; }
+    .form-section form button {
+      cursor: pointer;
+      color: white;
+      background-color: #101d24;
+      width: 100%;
+      padding: 8px 0px;
+      border: 2px solid #101d24;
+      border-radius: 4px;
+      margin: 16px 0px 0px 0px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 800;
+      transition: 0.2s ease-in-out; }
+      .form-section form button:hover {
+        background-color: white;
+        color: #101d24; }
+
+footer {
+  /* position: absolute;
+    bottom: 0; */
+  width: 100%;
+  text-align: center;
+  background: linear-gradient(90deg, rgba(9, 9, 121, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
+  margin: 0;
+  padding: 16px 40px; }
+  footer p {
+    color: white; }
+
 @keyframes pulse-animation {
   0% {
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px; }
@@ -98,4 +145,8 @@ nav {
   .container .section {
     display: grid;
     gap: 40px;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .form-section form {
+    max-width: 100%; }
+  footer {
+    position: static; } }

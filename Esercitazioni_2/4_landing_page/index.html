@@ -54,9 +54,35 @@
                         reprehenderit molestias!</p>
                 </div>
             </div>
-
         </div>
-    <main>
+
+        <div class="form-section">
+            <div class="form-title">
+                <h2> Contatti </h2>
+            </div>
+            <form action="/ciaone" method="POST">
+                <div>
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div>
+                    <input type="checkbox" name="privacy" id="privacy" required>
+                    <label for="privacy" id="privacy-label">Accetto tutte le cose che vuoi farmi accettare, anche la
+                        vendita del mio
+                        primogenito, se e quando nascerà.</label>
+                </div>
+                <button>Invia</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Davide Rivolta <span id="current-year"></span></p>
+    </footer>
 
     <script src="dist/app.js"></script>
 </body>
