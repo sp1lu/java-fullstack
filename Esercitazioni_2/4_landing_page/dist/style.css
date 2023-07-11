@@ -73,6 +73,16 @@ nav {
     .container .card img {
       padding-left: 48px; }
 
+@keyframes pulse-animation {
+  0% {
+    box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px; }
+  100% {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; } }
+
+.pulse {
+  animation-name: pulse-animation;
+  animation-duration: 1000ms; }
+
 @media screen and (max-width: 1200px) {
   nav .menu {
     max-width: 92%; }
