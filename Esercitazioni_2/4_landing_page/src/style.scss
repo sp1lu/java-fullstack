@@ -96,10 +96,14 @@ nav {
     }
 
     .card {
-        /* margin-bottom: 40px; */
         padding: 40px;
         border-radius: 16px;
-        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;        
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        transition: 100ms ease-in-out;
+        
+        &:hover {
+            transform: scale(1.01);
+        }
 
         h2 {
             font-size: 24px;
@@ -134,6 +138,10 @@ nav {
 
             .menu-list {
                 justify-content: space-between;
+
+                .menu-item {
+                    margin-right: 0;
+                }
             }
         }
     }

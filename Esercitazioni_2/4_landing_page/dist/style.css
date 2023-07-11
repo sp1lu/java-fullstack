@@ -64,10 +64,12 @@ nav {
     gap: 40px;
     grid-template-columns: repeat(3, 1fr); }
   .container .card {
-    /* margin-bottom: 40px; */
     padding: 40px;
     border-radius: 16px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 100ms ease-in-out; }
+    .container .card:hover {
+      transform: scale(1.01); }
     .container .card h2 {
       font-size: 24px; }
     .container .card img {
@@ -88,6 +90,8 @@ nav {
     max-width: 92%; }
     nav .menu .menu-list {
       justify-content: space-between; }
+      nav .menu .menu-list .menu-item {
+        margin-right: 0; }
   main {
     max-width: 92%;
     margin: auto; }
