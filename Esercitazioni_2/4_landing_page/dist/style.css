@@ -37,7 +37,10 @@ nav {
   padding: 16px 40px; }
   nav .menu {
     max-width: 80%;
-    margin: auto; }
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
     nav .menu .menu-list {
       display: flex;
       justify-content: flex-start; }
@@ -50,6 +53,17 @@ nav {
           transition: 0.1s ease-in-out; }
           nav .menu .menu-list .menu-item a:hover {
             color: #868686; }
+    nav .menu button {
+      cursor: pointer;
+      background-color: #101d24;
+      padding: 8px 16px;
+      color: white;
+      border: 1px solid #101d24;
+      border-radius: 4px;
+      transition: 0.2s ease-in-out; }
+      nav .menu button:hover {
+        background-color: white;
+        color: #101d24; }
 
 .title-section {
   text-align: center;
@@ -112,15 +126,14 @@ nav {
         color: #101d24; }
 
 footer {
-  /* position: absolute;
-    bottom: 0; */
   width: 100%;
   text-align: center;
-  background: linear-gradient(90deg, rgba(9, 9, 121, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
+  background: linear-gradient(to right, #4b79a1, #283e51);
   margin: 0;
   padding: 16px 40px; }
   footer p {
-    color: white; }
+    color: white;
+    font-size: 0.8rem; }
 
 @keyframes pulse-animation {
   0% {
@@ -137,8 +150,6 @@ footer {
     max-width: 92%; }
     nav .menu .menu-list {
       justify-content: space-between; }
-      nav .menu .menu-list .menu-item {
-        margin-right: 0; }
   main {
     max-width: 92%;
     margin: auto; }

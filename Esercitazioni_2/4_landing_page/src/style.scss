@@ -53,6 +53,9 @@ nav {
     .menu {
         max-width: 80%;
         margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
         .menu-list {
             display: flex;
@@ -71,6 +74,21 @@ nav {
                         color: $grey-font;
                     }
                 }
+            }
+        }
+
+        button {
+            cursor: pointer;
+            background-color: $dark-color;
+            padding: 8px 16px;
+            color: white;
+            border: 1px solid $dark-color;
+            border-radius: 4px;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                background-color: white;
+                color: $dark-color;
             }
         }
     }
@@ -166,16 +184,15 @@ nav {
 }
 
 footer {
-    /* position: absolute;
-    bottom: 0; */
     width: 100%;
     text-align: center;
-    background: linear-gradient(90deg, rgba(9, 9, 121, 0.5) 0%, rgba(0, 212, 255, 0.5) 100%);
+    background: linear-gradient(to right, #4b79a1, #283e51);
     margin: 0;
     padding: 16px 40px;
 
     p {
         color: white;
+        font-size: 0.8rem;
     }
 }
 
@@ -203,10 +220,6 @@ footer {
 
             .menu-list {
                 justify-content: space-between;
-
-                .menu-item {
-                    margin-right: 0;
-                }
             }
         }
     }
