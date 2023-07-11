@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Full stack development</title>
 
+    <link rel="icon" type="image/x-icon" href="assets/for-designers.svg">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;800;900&display=swap" rel="stylesheet">
@@ -14,6 +16,16 @@
 </head>
 
 <body>
+    <nav>
+        <div class="menu">
+            <ul class="menu-list">
+                <li class="menu-item"><a href="#backend" class="menu-item">Backend</a></li>
+                <li class="menu-item"><a href="#frontend" class="menu-item">Frontend</a></li>
+                <li class="menu-item"><a href="#database">Database</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
         <div class="title-section">
             <h1>Full stack development</h1>
@@ -21,21 +33,21 @@
 
         <div class="container">
             <div class="section">
-                <div class="card">
+                <div class="card" id="backend">
                     <img src="./assets/for-business.svg" alt="Backend development">
                     <h2>Backend development</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aut eum et ratione obcaecati
                         reprehenderit molestias!</p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="frontend">
                     <img src="./assets/for-designers.svg" alt="Frontend development">
                     <h2>Frontend development</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aut eum et ratione obcaecati
                         reprehenderit molestias!</p>
                 </div>
 
-                <div class="card">
+                <div class="card" id="database">
                     <img src="./assets/for-marketers.svg" alt="Database management">
                     <h2>Database management</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, aut eum et ratione obcaecati
@@ -47,7 +59,7 @@
     <main>
 
 
-            <script src="dist/app.js"></script>
+    <script src="dist/app.js"></script>
 </body>
 
 </html>

@@ -1,19 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
 body h1,
 body h2 {
   color: #101d24;
   font-family: 'Inter', sans-serif;
-  font-weight: 900; }
+  font-weight: 900;
+  margin: 0 0 12px 0; }
 
-body p {
-  color: #868686;
+body p,
+body a {
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1rem;
   line-height: 1.5; }
 
+body p {
+  color: #868686; }
+
+body a {
+  color: #101d24; }
+
 main {
   max-width: 80%;
   margin: auto; }
+
+nav {
+  margin: 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 16px 40px; }
+  nav .menu {
+    max-width: 80%;
+    margin: auto; }
+    nav .menu .menu-list {
+      display: flex;
+      justify-content: flex-start; }
+      nav .menu .menu-list .menu-item {
+        list-style-type: none;
+        margin-right: 24px; }
+        nav .menu .menu-list .menu-item a {
+          text-decoration: none;
+          font-size: 14px;
+          transition: 0.1s ease-in-out; }
+          nav .menu .menu-list .menu-item a:hover {
+            color: #868686; }
 
 .title-section {
   text-align: center;
@@ -22,20 +57,31 @@ main {
     font-size: 40px; }
 
 .container {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 40px; }
+  .container .section {
+    display: grid;
+    gap: 40px;
+    grid-template-columns: repeat(3, 1fr); }
   .container .card {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     padding: 40px;
     border-radius: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; }
     .container .card h2 {
-      font-size: 24px;
-      margin-top: 0px; }
+      font-size: 24px; }
     .container .card img {
       padding-left: 48px; }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 1200px) {
+  nav .menu {
+    max-width: 92%; }
+    nav .menu .menu-list {
+      justify-content: space-between; }
+  main {
+    max-width: 92%;
+    margin: auto; }
   .container .section {
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: 1fr; } }

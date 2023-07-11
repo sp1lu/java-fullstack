@@ -1,26 +1,79 @@
 $dark-color: rgb(16, 29, 36);
 $grey-font: rgb(134, 134, 134);
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth
+}
+
 body {
+
     h1,
     h2 {
         color: $dark-color;
         font-family: 'Inter', sans-serif;
         font-weight: 900;
+        margin: 0 0 12px 0;
     }
 
-    p {
-        color: $grey-font;
+    p,
+    a {
+
         font-family: 'Inter', sans-serif;
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.5;
+    }
+
+    p {
+        color: $grey-font;
+    }
+
+    a {
+        color: $dark-color;
     }
 }
 
 main {
     max-width: 80%;
     margin: auto;
+}
+
+nav {
+    margin: 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 16px 40px;
+
+    .menu {
+        max-width: 80%;
+        margin: auto;
+
+        .menu-list {
+            display: flex;
+            justify-content: flex-start;
+
+            .menu-item {
+                list-style-type: none;
+                margin-right: 24px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    transition: 0.1s ease-in-out;
+
+                    &:hover {
+                        color: $grey-font;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .title-section {
@@ -34,32 +87,51 @@ main {
 
 .container {
     text-align: center;
+    margin-bottom: 40px;
+
+    .section {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(3, 1fr);
+    }
 
     .card {
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
         padding: 40px;
         border-radius: 16px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
         h2 {
             font-size: 24px;
-            margin-top: 0px;
         }
 
         img {
             padding-left: 48px;
         }
     }
-
-    
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 1200px) {
+    nav {
+        .menu {
+            max-width: 92%;
+
+            .menu-list {
+                justify-content: space-between;
+            }
+        }
+    }
+
+    main {
+        max-width: 92%;
+        margin: auto;
+    }
+
     .container {
         .section {
             display: grid;
             gap: 40px;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: 1fr;
         }
     }
 }
