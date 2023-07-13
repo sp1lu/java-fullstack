@@ -89,7 +89,8 @@ nav {
     border-radius: 16px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     transition: 100ms ease-in-out;
-    /* .progress-bar-1 {
+    /*
+        .progress-bar-1 {
             animation-name: progress-filling-1;
         }
 
@@ -99,7 +100,8 @@ nav {
 
         .progress-bar-3 {
             animation-name: progress-filling-3;
-        } */ }
+        }
+        */ }
     .container .card:hover {
       transform: scale(1.01); }
     .container .card h2 {
@@ -179,7 +181,8 @@ footer {
   animation-name: pulse-animation;
   animation-duration: 1000ms; }
 
-/* @keyframes progress-filling-1 {
+/*
+@keyframes progress-filling-1 {
     0% {
         width: 0%;
     }
@@ -207,7 +210,8 @@ footer {
     100% {
         width: var(--bar-filling-3);
     }
-} */
+}
+*/
 @media screen and (max-width: 1200px) {
   nav {
     position: sticky;
