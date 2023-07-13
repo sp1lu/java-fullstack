@@ -7,7 +7,7 @@ menuItem.forEach((singleItem) => {
         var array = Array.prototype.slice.call(menuItem);
 
         card[array.indexOf(singleItem)].classList.add('pulse');
-    
+
         setTimeout(() => {
             card[array.indexOf(singleItem)].classList.remove('pulse');
         }, 1001);
@@ -20,8 +20,15 @@ const copyrightYear = document.querySelector('#current-year');
 let currentYear = new Date().getFullYear();
 copyrightYear.textContent = currentYear;
 
-// Form behaviour
-const contactForm = document.querySelector('#contact-form');
-contactForm.addEventListener('click', (e) => {
+// Progress bar
+const progressBars = document.querySelectorAll('.progress');
+
+window.addEventListener('DOMContentLoaded', (e) => {
+
+    progressBars.forEach(item => {
+        let value = item.getAttribute('data-value');
+        let bar = item.querySelector('.progress-bar');
+        bar.style.width = value;
+    });
     
-})
+});

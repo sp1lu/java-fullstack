@@ -36,7 +36,8 @@ nav {
   margin: 0;
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 16px 40px; }
+  padding: 16px 40px;
+  z-index: 99; }
   nav .menu {
     max-width: 80%;
     margin: auto;
@@ -98,22 +99,17 @@ nav {
       background-color: #f3f3f3;
       border-radius: 20px;
       margin: 24px 0 0 0; }
-    .container .card .progress-bar-1,
-    .container .card .progress-bar-2,
-    .container .card .progress-bar-3 {
+    .container .card .progress-bar {
       width: 50%;
       height: 8px;
       background-color: #313131;
       border-radius: 20px;
       animation-duration: 2000ms; }
     .container .card .progress-bar-1 {
-      width: 80%;
       animation-name: progress-filling-1; }
     .container .card .progress-bar-2 {
-      width: 100%;
       animation-name: progress-filling-2; }
     .container .card .progress-bar-3 {
-      width: 20%;
       animation-name: progress-filling-3; }
 
 .form-section {

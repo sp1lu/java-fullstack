@@ -52,6 +52,7 @@ nav {
     background-color: white;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 16px 40px;
+    z-index: 99;
 
     .menu {
         max-width: 80%;
@@ -143,9 +144,7 @@ nav {
             margin: 24px 0 0 0;
         }
         
-        .progress-bar-1,
-        .progress-bar-2,
-        .progress-bar-3 {
+        .progress-bar {
             width: 50%;
             height: 8px;
             background-color: rgb(49, 49, 49);
@@ -154,17 +153,14 @@ nav {
         }
 
         .progress-bar-1 {
-            width: 80%;
             animation-name: progress-filling-1;
         }
 
         .progress-bar-2 {
-            width: 100%;
             animation-name: progress-filling-2;
         }
 
         .progress-bar-3 {
-            width: 20%;
             animation-name: progress-filling-3;
         }
     }
