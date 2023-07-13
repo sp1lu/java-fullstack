@@ -34,6 +34,7 @@ main {
 
 nav {
   margin: 0;
+  background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   padding: 16px 40px; }
   nav .menu {
@@ -93,6 +94,27 @@ nav {
       font-size: 1.5rem; }
     .container .card img {
       padding-left: 48px; }
+    .container .card .progress {
+      background-color: #f3f3f3;
+      border-radius: 20px;
+      margin: 24px 0 0 0; }
+    .container .card .progress-bar-1,
+    .container .card .progress-bar-2,
+    .container .card .progress-bar-3 {
+      width: 50%;
+      height: 8px;
+      background-color: #313131;
+      border-radius: 20px;
+      animation-duration: 2000ms; }
+    .container .card .progress-bar-1 {
+      width: 80%;
+      animation-name: progress-filling-1; }
+    .container .card .progress-bar-2 {
+      width: 100%;
+      animation-name: progress-filling-2; }
+    .container .card .progress-bar-3 {
+      width: 20%;
+      animation-name: progress-filling-3; }
 
 .form-section {
   margin: 80px 0px; }
@@ -155,11 +177,38 @@ footer {
   animation-name: pulse-animation;
   animation-duration: 1000ms; }
 
+@keyframes progress-filling-1 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 80%; } }
+
+@keyframes progress-filling-2 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes progress-filling-3 {
+  0% {
+    width: 0%; }
+  100% {
+    width: 20%; } }
+
 @media screen and (max-width: 1200px) {
-  nav .menu {
-    max-width: 92%; }
-    nav .menu .menu-list {
-      justify-content: space-between; }
+  nav {
+    position: sticky;
+    top: 0; }
+    nav .menu {
+      max-width: 92%;
+      display: block; }
+      nav .menu .menu-list {
+        justify-content: space-between; }
+        nav .menu .menu-list .menu-item {
+          margin-right: 0px; }
+      nav .menu button {
+        margin: 16px 0 0 0;
+        width: 100%; }
   main {
     max-width: 92%;
     margin: auto; }

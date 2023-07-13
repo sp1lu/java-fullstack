@@ -19,3 +19,9 @@ menuItem.forEach((singleItem) => {
 const copyrightYear = document.querySelector('#current-year');
 let currentYear = new Date().getFullYear();
 copyrightYear.textContent = currentYear;
+
+// Form behaviour
+const contactForm = document.querySelector('#contact-form');
+contactForm.addEventListener('click', (e) => {
+    
+})
