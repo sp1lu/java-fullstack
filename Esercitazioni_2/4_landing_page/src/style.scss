@@ -145,14 +145,15 @@ nav {
         }
         
         .progress-bar {
-            width: 50%;
+            width: 0%;
+            transition: 2000ms ease-in-out;
             height: 8px;
             background-color: rgb(49, 49, 49);
             border-radius: 20px;
-            animation-duration: 2000ms;
+            /* animation-duration: 2000ms; */
         }
 
-        .progress-bar-1 {
+        /* .progress-bar-1 {
             animation-name: progress-filling-1;
         }
 
@@ -162,7 +163,7 @@ nav {
 
         .progress-bar-3 {
             animation-name: progress-filling-3;
-        }
+        } */
     }
 }
 
@@ -254,13 +255,13 @@ footer {
 }
 
 // Progress bar animation
-@keyframes progress-filling-1 {
+/* @keyframes progress-filling-1 {
     0% {
         width: 0%;
     }
 
     100% {
-        width: 80%;
+        width: var(--bar-filling-1);
     }
 }
 
@@ -270,7 +271,7 @@ footer {
     }
 
     100% {
-        width: 100%;
+        width: var(--bar-filling-2);
     }
 }
 
@@ -280,9 +281,9 @@ footer {
     }
 
     100% {
-        width: 20%;
+        width: var(--bar-filling-3);
     }
-}
+} */
 
 // Media queries
 @media screen and (max-width: 1200px) {
